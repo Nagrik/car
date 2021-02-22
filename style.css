@@ -1,3 +1,5 @@
+
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -7,41 +9,42 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
-article, aside, details, figcaption, figure, 
+
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-	display: block;
+    display: block;
 }
 body {
-	line-height: 1;
+    line-height: 1;
+    /* background: url(../needForJs/images/175045.jpg) no-repeat;
+    background-size: cover; */
 }
 ol, ul {
-	list-style: none;
+    list-style: none;
 }
 blockquote, q {
-	quotes: none;
+    quotes: none;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+    content: '';
+    content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
-
-
 
 .hide {
     display : none;
@@ -49,19 +52,17 @@ table {
 .car {
     width: 50px;
     height: 100px;
-    background: transparent url(../js/image/player.png);
-    background-position: center;
+    background: url(./Images/player.png);
     background-size: cover;
-    background-repeat: no-repeat;
+    background-position: center;
     position: absolute;
     left: 125px;
     bottom: 10px;
 }
-
 .enemy {
     width: 50px;
     height: 100px;
-    background: url(../js/image/enemy2.png);
+    background: url(./Images/enemy.png);
     background-size: cover;
     background-position: center;
     position: absolute;
@@ -71,18 +72,22 @@ table {
 
 .gameArea{
     width: 300px;
-    height: 750px;
+    height: 100%;
     position: relative;
-    margin:auto;
-    background: #222;
+    margin: auto;
+    background-color: #222;
+    background: url(./Images/asphalt.jfif);
+    background-size: cover;
     overflow: hidden;
+
+
 }
 
-.line{
+.line {
     position: absolute;
     width: 10px;
-    height: 50px;
-    background: #fff;
+    height: 45px;
+    background-color: #ffffff;
     left: 145px;
 }
 
@@ -103,20 +108,24 @@ table {
     font-weight: 700;
     border-bottom: 2px solid #c4c4c4;
 }
-
 .score{
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 20%;
     padding: 2rem 0;
-    z-index: 200;
-    color: skyblue;
+    z-index: 100;
+    color: #c0b16e;
     font-size: 1rem;
     background: black;
     font-family: sans-serif;
     font-weight: 500;
     border-bottom: 2px solid #c4c4c4;
     text-align: center;
-    
+
+}
+.body{
+
+    background: url(./Images/175045.jpg) no-repeat;
+    background-size: cover;
 }
